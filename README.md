@@ -5,7 +5,9 @@ Controller for iOS Simulator.
 
 This is a controller for the iOS Simulator. It controls start, install and setup of simulators. Can also send test-media from an entire folder to the simulator.
 
-I wrote this tool primarily for use in an Appium-based iOS test-automation framework. 
+## Why?
+
+I wrote this tool primarily for use in an Appium-based iOS test-automation framework.
 
 Tested working with 
 *  OS X 10.10.4 Yosemite
