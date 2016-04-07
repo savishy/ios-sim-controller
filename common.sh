@@ -20,7 +20,7 @@ getSimulators() {
 # which is used by many xcrun simctl commands.
 #####
 getBootedSimulatorSerial() {
-	SIM_SERIAL=`xcrun simctl list  | ggrep -i "booted" | ggrep -oP "(?<=\()[0-9A-F-]+(?=\))"`
+	SIM_SERIAL=`xcrun simctl list devices | ggrep -i "booted" | ggrep -oP "(?<=\()[0-9A-F-]+(?=\))"`
 	[[ "$SIM_SERIAL" == "" ]] && { echo "no serial number found for simulator $1."; exit 1; }
 	echo "$SIM_SERIAL"
 }
